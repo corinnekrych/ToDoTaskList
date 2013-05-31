@@ -1,0 +1,380 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		48A0D1921758D39500EE301A /* CellStyleValue1.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A0D1911758D39500EE301A /* CellStyleValue1.m */; };
+		48CF64B1175799610055A181 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48CF64B0175799610055A181 /* UIKit.framework */; };
+		48CF64B3175799610055A181 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48CF64B2175799610055A181 /* Foundation.framework */; };
+		48CF64B5175799610055A181 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48CF64B4175799610055A181 /* CoreGraphics.framework */; };
+		48CF64BB175799610055A181 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48CF64B9175799610055A181 /* InfoPlist.strings */; };
+		48CF64BD175799610055A181 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF64BC175799610055A181 /* main.m */; };
+		48CF64C3175799610055A181 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 48CF64C2175799610055A181 /* Default.png */; };
+		48CF64C5175799610055A181 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48CF64C4175799610055A181 /* Default@2x.png */; };
+		48CF64C7175799610055A181 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48CF64C6175799610055A181 /* Default-568h@2x.png */; };
+		48CF64DB175799F60055A181 /* AGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF64CE175799F60055A181 /* AGAppDelegate.m */; };
+		48CF64DE175799F60055A181 /* AGTasksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF64D4175799F60055A181 /* AGTasksViewController.m */; };
+		48CF64DF175799F60055A181 /* AGTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF64D6175799F60055A181 /* AGTaskViewController.m */; };
+		48CF650B1757A5B50055A181 /* DateSelectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF65001757A5B50055A181 /* DateSelectionCell.m */; };
+		48CF650C1757A5B50055A181 /* EditCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF65021757A5B50055A181 /* EditCell.m */; };
+		48CF65131757AA070055A181 /* TextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF65121757AA070055A181 /* TextViewCell.m */; };
+		B3F488483BFC4E85B77F1125 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC9B6219C5944CDA72CC8A7 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		48A0D1901758D39500EE301A /* CellStyleValue1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellStyleValue1.h; sourceTree = "<group>"; };
+		48A0D1911758D39500EE301A /* CellStyleValue1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellStyleValue1.m; sourceTree = "<group>"; };
+		48CF64AD175799610055A181 /* ToDoTaskList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoTaskList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48CF64B0175799610055A181 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		48CF64B2175799610055A181 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		48CF64B4175799610055A181 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		48CF64B8175799610055A181 /* ToDoTaskList-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ToDoTaskList-Info.plist"; sourceTree = "<group>"; };
+		48CF64BA175799610055A181 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		48CF64BC175799610055A181 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		48CF64BE175799610055A181 /* ToDoTaskList-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToDoTaskList-Prefix.pch"; sourceTree = "<group>"; };
+		48CF64C2175799610055A181 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		48CF64C4175799610055A181 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		48CF64C6175799610055A181 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		48CF64CD175799F60055A181 /* AGAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGAppDelegate.h; path = ToDoTaskList/AGAppDelegate.h; sourceTree = "<group>"; };
+		48CF64CE175799F60055A181 /* AGAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGAppDelegate.m; path = ToDoTaskList/AGAppDelegate.m; sourceTree = "<group>"; };
+		48CF64D3175799F60055A181 /* AGTasksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTasksViewController.h; path = ToDoTaskList/AGTasksViewController.h; sourceTree = "<group>"; };
+		48CF64D4175799F60055A181 /* AGTasksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTasksViewController.m; path = ToDoTaskList/AGTasksViewController.m; sourceTree = "<group>"; };
+		48CF64D5175799F60055A181 /* AGTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTaskViewController.h; path = ToDoTaskList/AGTaskViewController.h; sourceTree = "<group>"; };
+		48CF64D6175799F60055A181 /* AGTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTaskViewController.m; path = ToDoTaskList/AGTaskViewController.m; sourceTree = "<group>"; };
+		48CF64FF1757A5B50055A181 /* DateSelectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DateSelectionCell.h; path = ToDoTaskList/DateSelectionCell.h; sourceTree = "<group>"; };
+		48CF65001757A5B50055A181 /* DateSelectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DateSelectionCell.m; path = ToDoTaskList/DateSelectionCell.m; sourceTree = "<group>"; };
+		48CF65011757A5B50055A181 /* EditCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditCell.h; path = ToDoTaskList/EditCell.h; sourceTree = "<group>"; };
+		48CF65021757A5B50055A181 /* EditCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditCell.m; path = ToDoTaskList/EditCell.m; sourceTree = "<group>"; };
+		48CF65111757AA070055A181 /* TextViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextViewCell.h; path = ToDoTaskList/TextViewCell.h; sourceTree = "<group>"; };
+		48CF65121757AA070055A181 /* TextViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextViewCell.m; path = ToDoTaskList/TextViewCell.m; sourceTree = "<group>"; };
+		6673A39E71154933A2F50F43 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		7AC9B6219C5944CDA72CC8A7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48CF64AA175799610055A181 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48CF64B1175799610055A181 /* UIKit.framework in Frameworks */,
+				48CF64B3175799610055A181 /* Foundation.framework in Frameworks */,
+				48CF64B5175799610055A181 /* CoreGraphics.framework in Frameworks */,
+				B3F488483BFC4E85B77F1125 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48CF64A4175799610055A181 = {
+			isa = PBXGroup;
+			children = (
+				48CF64CD175799F60055A181 /* AGAppDelegate.h */,
+				48CF64CE175799F60055A181 /* AGAppDelegate.m */,
+				48CF64EB1757A1460055A181 /* Controller */,
+				48CF64EC1757A1760055A181 /* View */,
+				48CF64B6175799610055A181 /* ToDoTaskList */,
+				48CF64AF175799610055A181 /* Frameworks */,
+				48CF64AE175799610055A181 /* Products */,
+				6673A39E71154933A2F50F43 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		48CF64AE175799610055A181 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48CF64AD175799610055A181 /* ToDoTaskList.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48CF64AF175799610055A181 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48CF64B0175799610055A181 /* UIKit.framework */,
+				48CF64B2175799610055A181 /* Foundation.framework */,
+				48CF64B4175799610055A181 /* CoreGraphics.framework */,
+				7AC9B6219C5944CDA72CC8A7 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		48CF64B6175799610055A181 /* ToDoTaskList */ = {
+			isa = PBXGroup;
+			children = (
+				48CF64B7175799610055A181 /* Supporting Files */,
+			);
+			path = ToDoTaskList;
+			sourceTree = "<group>";
+		};
+		48CF64B7175799610055A181 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				48CF64B8175799610055A181 /* ToDoTaskList-Info.plist */,
+				48CF64B9175799610055A181 /* InfoPlist.strings */,
+				48CF64BC175799610055A181 /* main.m */,
+				48CF64BE175799610055A181 /* ToDoTaskList-Prefix.pch */,
+				48CF64C2175799610055A181 /* Default.png */,
+				48CF64C4175799610055A181 /* Default@2x.png */,
+				48CF64C6175799610055A181 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		48CF64EB1757A1460055A181 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				48CF64D3175799F60055A181 /* AGTasksViewController.h */,
+				48CF64D4175799F60055A181 /* AGTasksViewController.m */,
+				48CF64D5175799F60055A181 /* AGTaskViewController.h */,
+				48CF64D6175799F60055A181 /* AGTaskViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		48CF64EC1757A1760055A181 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				48A0D1901758D39500EE301A /* CellStyleValue1.h */,
+				48A0D1911758D39500EE301A /* CellStyleValue1.m */,
+				48CF64FF1757A5B50055A181 /* DateSelectionCell.h */,
+				48CF65001757A5B50055A181 /* DateSelectionCell.m */,
+				48CF65011757A5B50055A181 /* EditCell.h */,
+				48CF65021757A5B50055A181 /* EditCell.m */,
+				48CF65111757AA070055A181 /* TextViewCell.h */,
+				48CF65121757AA070055A181 /* TextViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		48CF64AC175799610055A181 /* ToDoTaskList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48CF64CA175799610055A181 /* Build configuration list for PBXNativeTarget "ToDoTaskList" */;
+			buildPhases = (
+				F88D00F8F5C445C2B156D3A0 /* Check Pods Manifest.lock */,
+				48CF64A9175799610055A181 /* Sources */,
+				48CF64AA175799610055A181 /* Frameworks */,
+				48CF64AB175799610055A181 /* Resources */,
+				511B34C88991428287F06B11 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToDoTaskList;
+			productName = ToDoTaskList;
+			productReference = 48CF64AD175799610055A181 /* ToDoTaskList.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48CF64A5175799610055A181 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = My;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "corinne Krych";
+			};
+			buildConfigurationList = 48CF64A8175799610055A181 /* Build configuration list for PBXProject "ToDoTaskList" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 48CF64A4175799610055A181;
+			productRefGroup = 48CF64AE175799610055A181 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48CF64AC175799610055A181 /* ToDoTaskList */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		48CF64AB175799610055A181 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48CF64BB175799610055A181 /* InfoPlist.strings in Resources */,
+				48CF64C3175799610055A181 /* Default.png in Resources */,
+				48CF64C5175799610055A181 /* Default@2x.png in Resources */,
+				48CF64C7175799610055A181 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		511B34C88991428287F06B11 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+		F88D00F8F5C445C2B156D3A0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48CF64A9175799610055A181 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48CF64BD175799610055A181 /* main.m in Sources */,
+				48CF64DB175799F60055A181 /* AGAppDelegate.m in Sources */,
+				48CF64DE175799F60055A181 /* AGTasksViewController.m in Sources */,
+				48CF64DF175799F60055A181 /* AGTaskViewController.m in Sources */,
+				48CF650B1757A5B50055A181 /* DateSelectionCell.m in Sources */,
+				48CF650C1757A5B50055A181 /* EditCell.m in Sources */,
+				48CF65131757AA070055A181 /* TextViewCell.m in Sources */,
+				48A0D1921758D39500EE301A /* CellStyleValue1.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		48CF64B9175799610055A181 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48CF64BA175799610055A181 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		48CF64C8175799610055A181 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		48CF64C9175799610055A181 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		48CF64CB175799610055A181 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6673A39E71154933A2F50F43 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ToDoTaskList/ToDoTaskList-Prefix.pch";
+				INFOPLIST_FILE = "ToDoTaskList/ToDoTaskList-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		48CF64CC175799610055A181 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6673A39E71154933A2F50F43 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ToDoTaskList/ToDoTaskList-Prefix.pch";
+				INFOPLIST_FILE = "ToDoTaskList/ToDoTaskList-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		48CF64A8175799610055A181 /* Build configuration list for PBXProject "ToDoTaskList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48CF64C8175799610055A181 /* Debug */,
+				48CF64C9175799610055A181 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48CF64CA175799610055A181 /* Build configuration list for PBXNativeTarget "ToDoTaskList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48CF64CB175799610055A181 /* Debug */,
+				48CF64CC175799610055A181 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 48CF64A5175799610055A181 /* Project object */;
+}
