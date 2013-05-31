@@ -140,7 +140,7 @@ enum AGDueProjTagRows {
                     
                     
                     if ([self.task objectForKey:@"project"] != nil) {
-                        dateCell.textLabel.text = self.task[@"project"];
+                        dateCell.textLabel.text = [self.task objectForKey:@"project"];//self.task[@"project"];
                     }
                     cell = dateCell;
                     break;

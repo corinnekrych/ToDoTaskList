@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 @interface AGTaskViewController : UITableViewController
-@property (strong, nonatomic) id task;
+@property (strong, nonatomic) NSDictionary *task;
 @end

@@ -18,7 +18,6 @@
 		486BDE7A1753860A000F3B07 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 486BDE791753860A000F3B07 /* Default-568h@2x.png */; };
 		486BDE8217538651000F3B07 /* AGTasksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 486BDE8117538651000F3B07 /* AGTasksViewController.m */; };
 		486BDE85175395E1000F3B07 /* AGToDoAPIService.m in Sources */ = {isa = PBXBuildFile; fileRef = 486BDE84175395E0000F3B07 /* AGToDoAPIService.m */; };
-		486BDE891753978D000F3B07 /* AGTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 486BDE881753978D000F3B07 /* AGTask.m */; };
 		486BDE911753B480000F3B07 /* AGTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 486BDE901753B480000F3B07 /* AGTaskViewController.m */; };
 		48A0D20E1758F44E00EE301A /* CellStyleValue1.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A0D2071758F44E00EE301A /* CellStyleValue1.m */; };
 		48A0D20F1758F44E00EE301A /* DateSelectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A0D2091758F44E00EE301A /* DateSelectionCell.m */; };
@@ -47,8 +46,6 @@
 		486BDE8117538651000F3B07 /* AGTasksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTasksViewController.m; sourceTree = "<group>"; };
 		486BDE83175395E0000F3B07 /* AGToDoAPIService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGToDoAPIService.h; sourceTree = "<group>"; };
 		486BDE84175395E0000F3B07 /* AGToDoAPIService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGToDoAPIService.m; sourceTree = "<group>"; };
-		486BDE871753978C000F3B07 /* AGTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTask.h; sourceTree = "<group>"; };
-		486BDE881753978D000F3B07 /* AGTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTask.m; sourceTree = "<group>"; };
 		486BDE8F1753B480000F3B07 /* AGTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTaskViewController.h; sourceTree = "<group>"; };
 		486BDE901753B480000F3B07 /* AGTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTaskViewController.m; sourceTree = "<group>"; };
 		48A0D2061758F44E00EE301A /* CellStyleValue1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellStyleValue1.h; sourceTree = "<group>"; };
@@ -114,7 +111,6 @@
 		486BDE691753860A000F3B07 /* ARTasksTODO */ = {
 			isa = PBXGroup;
 			children = (
-				486BDE8A17539793000F3B07 /* Model */,
 				486BDE8B175397AC000F3B07 /* Controller */,
 				486BDE721753860A000F3B07 /* AGAppDelegate.h */,
 				486BDE731753860A000F3B07 /* AGAppDelegate.m */,
@@ -146,15 +142,6 @@
 				486BDE83175395E0000F3B07 /* AGToDoAPIService.h */,
 			);
 			name = Service;
-			sourceTree = "<group>";
-		};
-		486BDE8A17539793000F3B07 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				486BDE871753978C000F3B07 /* AGTask.h */,
-				486BDE881753978D000F3B07 /* AGTask.m */,
-			);
-			name = Model;
 			sourceTree = "<group>";
 		};
 		486BDE8B175397AC000F3B07 /* Controller */ = {
@@ -290,7 +277,6 @@
 				486BDE741753860A000F3B07 /* AGAppDelegate.m in Sources */,
 				486BDE8217538651000F3B07 /* AGTasksViewController.m in Sources */,
 				486BDE85175395E1000F3B07 /* AGToDoAPIService.m in Sources */,
-				486BDE891753978D000F3B07 /* AGTask.m in Sources */,
 				486BDE911753B480000F3B07 /* AGTaskViewController.m in Sources */,
 				48A0D20E1758F44E00EE301A /* CellStyleValue1.m in Sources */,
 				48A0D20F1758F44E00EE301A /* DateSelectionCell.m in Sources */,
