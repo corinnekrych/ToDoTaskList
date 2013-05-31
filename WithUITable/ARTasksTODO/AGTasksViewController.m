@@ -36,7 +36,6 @@
     return self;
 }
 
-// TODO to move to AGToDoAPIService
 - (void) retrieveDataFromAeroGearTODO {
     id<AGAuthenticationModule> authModule;
     // NSURL object:
@@ -51,20 +50,20 @@
     id<AGPipe> tasksPipe;
     
     // create the 'todo' pipeline, which contains the 'projects' pipe:
-    AGPipeline *todo = [AGPipeline pipelineWithBaseURL:projectsURL];    // [4]
+    AGPipeline *todo = [AGPipeline pipelineWithBaseURL:projectsURL];    
     
-    tasksPipe = [todo pipe:^(id<AGPipeConfig> config) {                 // [5]
+    tasksPipe = [todo pipe:^(id<AGPipeConfig> config) {                 
         [config setName:@"tasks"];
         [config setAuthModule:authModule];
     }];
     
-    [authModule login:@"john" password:@"123" success:^(id object) {    // [6]
+    [authModule login:@"john" password:@"123" success:^(id object) {    
         
-        [tasksPipe read:^(id responseObject) {                          // [7]
+        [tasksPipe read:^(id responseObject) {                          
             
-            _tasks = responseObject;                                    // [8]
+            _tasks = responseObject;                                    
             
-            [self.tableView reloadData];                                // [9]
+            [self.tableView reloadData];                               
             
         }
                 failure:^(NSError *error) {
@@ -117,13 +116,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSUInteger row = [indexPath row];
-    
-    //TODO
-    //AGTask *task = [_tasks objectAtIndex:row];
     id task = [_tasks objectAtIndex:row];
     
     AGTaskViewController *taskController = [[AGTaskViewController alloc] initWithStyle:UITableViewStyleGrouped];
-    //taskController.delegate = self;
     taskController.task = task;
     
     UIViewAnimationTransition trans = UIViewAnimationTransitionFlipFromRight;
