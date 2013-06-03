@@ -52,7 +52,7 @@
     [self registerClass:[EditCell class] forCellReuseIdentifier:NSStringFromClass([EditCell class])];
     ARCellData *cellData = [[ARCellData alloc] initWithIdentifier:NSStringFromClass([EditCell class])];
     [cellData setCellConfigurationBlock:^(EditCell *cell) {
-        cell.txtField.text = [self.task objectForKey:@"title"];
+        cell.txtField.text = self.task[@"title"];
     }];                
     [sectionData addCellData:cellData];    
     return sectionData;
@@ -63,7 +63,7 @@
     [self registerClass:[TextViewCell class] forCellReuseIdentifier:NSStringFromClass([TextViewCell class])];
     ARCellData *cellData = [[ARCellData alloc] initWithIdentifier:NSStringFromClass([TextViewCell class])];
     [cellData setCellConfigurationBlock:^(TextViewCell *cell) {
-        cell.txtView.text = [self.task objectForKey:@"description"];
+        cell.txtView.text = self.task[@"description"];
     }];
     
     
@@ -86,7 +86,7 @@
     [cellData setCellConfigurationBlock:^(CellStyleValue1 *cell) { 
         //[cell setStyle:UITableViewCellStyleValue1];
         cell.textLabel.text = @"Project";
-        cell.detailTextLabel.text = [self.task objectForKey:@"project"];
+        cell.detailTextLabel.text = self.task[@"project"];
     }];
     return cellData;
 }
