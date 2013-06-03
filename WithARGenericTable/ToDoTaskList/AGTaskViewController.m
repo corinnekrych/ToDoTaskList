@@ -49,13 +49,16 @@
 }
 
 - (ARSectionData *)sectionTitle {
+    NSString *name = NSStringFromClass([EditCell class]);
     ARSectionData *sectionData = [[ARSectionData alloc] init];
-    [self.tableView registerClass:[EditCell class] forCellReuseIdentifier:NSStringFromClass([EditCell class])];
-    ARCellData *cellData = [[ARCellData alloc] initWithIdentifier:NSStringFromClass([EditCell class])];
+    [self.tableView registerClass:[EditCell class] forCellReuseIdentifier:name];
+    
+    ARCellData *cellData = [[ARCellData alloc] initWithIdentifier:name];
     [cellData setCellConfigurationBlock:^(EditCell *cell) {
         cell.txtField.text = self.task[@"title"];
     }];                
-    [sectionData addCellData:cellData];    
+    
+    [sectionData addCellData:cellData];
     return sectionData;
 }
 

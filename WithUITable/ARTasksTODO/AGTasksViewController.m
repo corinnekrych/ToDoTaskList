@@ -105,8 +105,6 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    // Configure the cell... setting the text of our cell's label
-    //cell.textLabel.text = [_tasks objectAtIndex:indexPath.row];
     
     NSUInteger row = [indexPath row];
     
