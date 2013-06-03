@@ -35,9 +35,11 @@
 {
     [super viewDidLoad];
     
-    ARTableViewData *tableViewData = [[ARTableViewData alloc] initWithSectionDataArray:@[[self sectionTitle]]];
+    //ARTableViewData *tableViewData = [[ARTableViewData alloc] initWithSectionDataArray:@[[self sectionTitle]]];
+    ARTableViewData *tableViewData = [[ARTableViewData alloc] init];
     
     // add the section to the tableView
+    [tableViewData addSectionData:[self sectionTitle]];
     [tableViewData addSectionData:[self sectionDescription]];
     [tableViewData addSectionData:[self sectionDueDateProjectTag]];
     

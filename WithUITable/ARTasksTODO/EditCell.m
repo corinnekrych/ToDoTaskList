@@ -39,6 +39,17 @@
     return self;
 }
 
+
++ (id)cellForTableView:(UITableView *)tableView withClassName:(NSString*) name {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:name];
+    if (cell == nil) {
+        cell = [[ NSClassFromString(name) alloc] init];
+       
+    }
+    return cell;
+
+}
+
 - (void)layoutSubviews {
     [super layoutSubviews];
     

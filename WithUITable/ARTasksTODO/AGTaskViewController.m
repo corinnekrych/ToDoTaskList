@@ -101,16 +101,23 @@ enum AGDueProjTagRows {
     
     switch (section) {
         case AGTableSectionTitle: {
-            EditCell *titleCell = [EditCell cellForTableView:tableView];
-            titleCell.txtField.text = self.task[@"title"];
+            EditCell *titleCell = [EditCell cellForTableView:tableView withClassName:@"EditCell"];
+            titleCell.txtField.text = [self.task objectForKey:@"title"];
+            cell = titleCell;
+            break;
+        }
+        default:
+        {
+            EditCell *titleCell = [EditCell cellForTableView:tableView withClassName:@"EditCell"];
+            titleCell.txtField.text = [self.task objectForKey:@"title"];
             cell = titleCell;
             break;
         }
         case AGTableSectionDescr:
         {
-            TextViewCell *descrCell = [TextViewCell cellForTableView:tableView];           
+            TextViewCell *descrCell = [TextViewCell cellForTableView:tableView withClassName:@"TextViewCell"];
             if (![self.task[@"description"] isKindOfClass:[NSNull class]])
-                descrCell.txtView.text = self.task[@"description"];
+                descrCell.txtView.text = [self.task objectForKey:@"description"];
             
             cell = descrCell;
             break;
@@ -119,14 +126,15 @@ enum AGDueProjTagRows {
         {
             switch (row) {
                 case AGTableSecDueProjTagRowDue:
-                {
+                {    
+                
                     DateSelectionCell *dateCell = [[DateSelectionCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:nil];
                     dateCell.textLabel.text = @"Due Date";
-                    dateCell.detailTextLabel.text = self.task[@"date"];
+                    dateCell.detailTextLabel.text = [self.task objectForKey:@"date"];
                     
                     NSDateFormatter *inputFormat = [[NSDateFormatter alloc] init];
                     [inputFormat setDateFormat:@"yyyy-MM-dd"];
-                    NSDate *inputDate = [inputFormat dateFromString: self.task[@"description"]];
+                    NSDate *inputDate = [inputFormat dateFromString: [self.task objectForKey:@"description"]];
                    
                     dateCell.dateValue = inputDate;
                 
@@ -135,26 +143,27 @@ enum AGDueProjTagRows {
                 }
                 case AGTableSecDueProjTagRowProj:
                 {
-                    CellStyleValue1 *dateCell = [CellStyleValue1 cellForTableView:tableView];
-                    //dateCell.textLabel.text  = self.task[@"description"];
                     
+                   EditCell *projCell = [EditCell cellForTableView:tableView withClassName:@"EditCell"];
                     
                     if ([self.task objectForKey:@"project"] != nil) {
-                        dateCell.textLabel.text = [self.task objectForKey:@"project"];//self.task[@"project"];
+                        projCell.txtField.text = [NSString stringWithFormat:@"Poject %@", [self.task objectForKey:@"project"]];
                     }
-                    cell = dateCell;
+                    cell = projCell;
+
                     break;
                 }
                 case AGTableSecDueProjTagRowTag:
                 {
-                    CellStyleValue1 *selCell = [CellStyleValue1 cellForTableView:tableView];
-                    selCell.textLabel.text = @"Tags";
+                    EditCell *tagCell = [EditCell cellForTableView:tableView withClassName:@"EditCell"];
+                    tagCell.textLabel.text = @"Tags";
                     
-                    selCell.detailTextLabel.text = self.task[@"tags"];
+                    tagCell.detailTextLabel.text = [NSString stringWithFormat:@"Tags %@", [self.task objectForKey:@"tags"]];
                     
-                    cell = selCell;
+                    cell = tagCell;
                     break;
                 }
+
             }
             
             break;

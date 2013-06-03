@@ -19,12 +19,9 @@
 		486BDE8217538651000F3B07 /* AGTasksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 486BDE8117538651000F3B07 /* AGTasksViewController.m */; };
 		486BDE85175395E1000F3B07 /* AGToDoAPIService.m in Sources */ = {isa = PBXBuildFile; fileRef = 486BDE84175395E0000F3B07 /* AGToDoAPIService.m */; };
 		486BDE911753B480000F3B07 /* AGTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 486BDE901753B480000F3B07 /* AGTaskViewController.m */; };
-		48A0D20E1758F44E00EE301A /* CellStyleValue1.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A0D2071758F44E00EE301A /* CellStyleValue1.m */; };
 		48A0D20F1758F44E00EE301A /* DateSelectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A0D2091758F44E00EE301A /* DateSelectionCell.m */; };
 		48A0D2101758F44E00EE301A /* EditCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A0D20B1758F44E00EE301A /* EditCell.m */; };
 		48A0D2111758F44E00EE301A /* TextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A0D20D1758F44E00EE301A /* TextViewCell.m */; };
-		48A0D2141758F55400EE301A /* AGBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A0D2131758F55400EE301A /* AGBaseCell.m */; };
-		48A0D2171758F57A00EE301A /* AGTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A0D2161758F57A00EE301A /* AGTitleCell.m */; };
 		4E064F067F8B48D68EFA3A3F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF644C7C316341C0950BECD6 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -48,18 +45,12 @@
 		486BDE84175395E0000F3B07 /* AGToDoAPIService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGToDoAPIService.m; sourceTree = "<group>"; };
 		486BDE8F1753B480000F3B07 /* AGTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTaskViewController.h; sourceTree = "<group>"; };
 		486BDE901753B480000F3B07 /* AGTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTaskViewController.m; sourceTree = "<group>"; };
-		48A0D2061758F44E00EE301A /* CellStyleValue1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellStyleValue1.h; sourceTree = "<group>"; };
-		48A0D2071758F44E00EE301A /* CellStyleValue1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellStyleValue1.m; sourceTree = "<group>"; };
 		48A0D2081758F44E00EE301A /* DateSelectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateSelectionCell.h; sourceTree = "<group>"; };
 		48A0D2091758F44E00EE301A /* DateSelectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateSelectionCell.m; sourceTree = "<group>"; };
 		48A0D20A1758F44E00EE301A /* EditCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditCell.h; sourceTree = "<group>"; };
 		48A0D20B1758F44E00EE301A /* EditCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditCell.m; sourceTree = "<group>"; };
 		48A0D20C1758F44E00EE301A /* TextViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewCell.h; sourceTree = "<group>"; };
 		48A0D20D1758F44E00EE301A /* TextViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewCell.m; sourceTree = "<group>"; };
-		48A0D2121758F55400EE301A /* AGBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGBaseCell.h; sourceTree = "<group>"; };
-		48A0D2131758F55400EE301A /* AGBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGBaseCell.m; sourceTree = "<group>"; };
-		48A0D2151758F57A00EE301A /* AGTitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTitleCell.h; path = ../../../ARTasksTODO/ARTasksTODO/AGTitleCell.h; sourceTree = "<group>"; };
-		48A0D2161758F57A00EE301A /* AGTitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTitleCell.m; path = ../../../ARTasksTODO/ARTasksTODO/AGTitleCell.m; sourceTree = "<group>"; };
 		F269A6E1008240ABA8550F74 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		FF644C7C316341C0950BECD6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -158,12 +149,6 @@
 		486BDE951753FA2A000F3B07 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				48A0D2151758F57A00EE301A /* AGTitleCell.h */,
-				48A0D2161758F57A00EE301A /* AGTitleCell.m */,
-				48A0D2121758F55400EE301A /* AGBaseCell.h */,
-				48A0D2131758F55400EE301A /* AGBaseCell.m */,
-				48A0D2061758F44E00EE301A /* CellStyleValue1.h */,
-				48A0D2071758F44E00EE301A /* CellStyleValue1.m */,
 				48A0D2081758F44E00EE301A /* DateSelectionCell.h */,
 				48A0D2091758F44E00EE301A /* DateSelectionCell.m */,
 				48A0D20A1758F44E00EE301A /* EditCell.h */,
@@ -278,12 +263,9 @@
 				486BDE8217538651000F3B07 /* AGTasksViewController.m in Sources */,
 				486BDE85175395E1000F3B07 /* AGToDoAPIService.m in Sources */,
 				486BDE911753B480000F3B07 /* AGTaskViewController.m in Sources */,
-				48A0D20E1758F44E00EE301A /* CellStyleValue1.m in Sources */,
 				48A0D20F1758F44E00EE301A /* DateSelectionCell.m in Sources */,
 				48A0D2101758F44E00EE301A /* EditCell.m in Sources */,
 				48A0D2111758F44E00EE301A /* TextViewCell.m in Sources */,
-				48A0D2141758F55400EE301A /* AGBaseCell.m in Sources */,
-				48A0D2171758F57A00EE301A /* AGTitleCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

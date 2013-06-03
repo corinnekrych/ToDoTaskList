@@ -15,7 +15,12 @@
  * limitations under the License.
  */
 #import "AGBaseCell.h"
-@interface EditCell : AGBaseCell
+
+@protocol AGBaseCell
++ (id)cellForTableView:(UITableView *)tableView withClassName:(NSString*) name;
+@end
+
+@interface EditCell : UITableViewCell <AGBaseCell>
 
 @property(strong, readonly, nonatomic) UITextField *txtField;
 

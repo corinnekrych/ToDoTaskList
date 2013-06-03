@@ -14,9 +14,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#import "AGBaseCell.h"
+#import "EditCell.h"
 
-@interface TextViewCell : AGBaseCell
+@interface TextViewCell : UITableViewCell <AGBaseCell>
 
 @property(strong, readonly, nonatomic) UITextView *txtView;
 
