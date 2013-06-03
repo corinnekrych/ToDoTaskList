@@ -35,20 +35,21 @@
 {
     [super viewDidLoad];
     
-    ARTableViewData *tableViewData = [[ARTableViewData alloc] initWithSectionDataArray:@[[self sectionTitle]]];
+    ARTableViewData *tableViewData = [[ARTableViewData alloc] init];
     
     // add the section to the tableView
+    [tableViewData addSectionData:[self sectionTitle]];
     [tableViewData addSectionData:[self sectionDescription]];
     [tableViewData addSectionData:[self sectionDueDateProjectTag]];
     
     // setting the tableViewData property will automaticaly reload the tableView
     self.tableViewData = tableViewData;
-    
+
 }
 
 - (ARSectionData *)sectionTitle {
     ARSectionData *sectionData = [[ARSectionData alloc] init];
-    [self.tableView registerClass:[EditCell class] forCellReuseIdentifier:NSStringFromClass([EditCell class])];
+    [self registerClass:[EditCell class] forCellReuseIdentifier:NSStringFromClass([EditCell class])];
     ARCellData *cellData = [[ARCellData alloc] initWithIdentifier:NSStringFromClass([EditCell class])];
     [cellData setCellConfigurationBlock:^(EditCell *cell) {
         cell.txtField.text = self.task[@"title"];
@@ -59,7 +60,7 @@
 
 - (ARSectionData *)sectionDescription {
     ARSectionData *sectionData = [[ARSectionData alloc] init];
-    [self.tableView registerClass:[TextViewCell class] forCellReuseIdentifier:NSStringFromClass([TextViewCell class])];
+    [self registerClass:[TextViewCell class] forCellReuseIdentifier:NSStringFromClass([TextViewCell class])];
     ARCellData *cellData = [[ARCellData alloc] initWithIdentifier:NSStringFromClass([TextViewCell class])];
     [cellData setCellConfigurationBlock:^(TextViewCell *cell) {
         cell.txtView.text = self.task[@"description"];
@@ -80,7 +81,7 @@
 
 
 - (ARCellData *)cellProject {
-    [self.tableView registerClass:[CellStyleValue1 class] forCellReuseIdentifier:NSStringFromClass([CellStyleValue1 class])];
+    [self registerClass:[CellStyleValue1 class] forCellReuseIdentifier:NSStringFromClass([CellStyleValue1 class])];
     ARCellData *cellData = [[ARCellData alloc] initWithIdentifier:NSStringFromClass([CellStyleValue1 class])];
     [cellData setCellConfigurationBlock:^(CellStyleValue1 *cell) { 
         //[cell setStyle:UITableViewCellStyleValue1];
@@ -91,7 +92,7 @@
 }
 
 - (ARCellData *)cellTag {
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:NSStringFromClass([UITableViewCell class])];
+    [self registerClass:[UITableViewCell class] forCellReuseIdentifier:NSStringFromClass([UITableViewCell class])];
     ARCellData *cellData = [[ARCellData alloc] initWithIdentifier:NSStringFromClass([UITableViewCell class])];
     [cellData setCellConfigurationBlock:^(UITableViewCell *cell) {
         cell.textLabel.text = @"Tags";
@@ -101,7 +102,7 @@
 }
 
 - (ARCellData *)cellDueDate {
-    [self.tableView registerClass:[DateSelectionCell class] forCellReuseIdentifier:NSStringFromClass([DateSelectionCell class])];
+    [self registerClass:[DateSelectionCell class] forCellReuseIdentifier:NSStringFromClass([DateSelectionCell class])];
     ARCellData *cellData = [[ARCellData alloc] initWithIdentifier:NSStringFromClass([DateSelectionCell class])];
     [cellData setCellConfigurationBlock:^(DateSelectionCell *cell) {
         cell.textLabel.text = @"Due Date";
